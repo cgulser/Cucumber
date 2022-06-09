@@ -5,15 +5,15 @@ import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        plugin={"html:target/cucumber-reports.html",
+        plugin={"html:target/cucumber-reports.html",  // raporlama pluginleri
                 "json:target/json-reports/cucumber.json",
                 "junit:target/xml-report/cucumber.xml"
         },
         features = "src/test/resources/features",
         glue="stepDefinitions",
-        tags="@aut ",
+        tags="@aut ", // calistirmak istedigimiz tag'i buraya yazariz
 
-        dryRun = false
+        dryRun = false   // true olursa failed olana kadar calisir sonra eksik adimlari verir
 )
 public class TestRunner {
     /*
