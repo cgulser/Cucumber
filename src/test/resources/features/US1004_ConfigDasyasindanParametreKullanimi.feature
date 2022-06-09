@@ -1,6 +1,6 @@
 Feature: US1004 kullanici parametre ile configration file' i kullanabilmeli
 
-
+@sirali @parametre
   Scenario: TC07 configration propetries dosyasindan parametre kullanimini
 
     Given kullanici "techproeducationUrl" anasayfasinda
